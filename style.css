@@ -1,0 +1,337 @@
+* {
+	box-sizing: border-box;
+	line-height: 1;
+}
+body {
+	width: 100%;
+}
+header, section, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #f7f7f7;
+}
+header a, footer a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #f7f7f7;
+    text-decoration: none;
+    cursor: pointer;
+}
+header a:hover, footer a:hover {
+    transition: 0.5s;
+    color: #E39128;
+}
+h1, h2, h3, h4, .description, .description p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+h1 {
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: #CD6326;
+}
+h2 {
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #333333;
+}
+h3 {
+    font-size: 27px;
+    line-height: 41px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #333333;
+}
+h4 {
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #f7f7f7;
+
+}
+.logo {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    margin-right: 15.7px;
+}
+
+
+
+
+
+
+main {
+    background-color: #cccccc;
+}
+.bgi_color_header {
+    background-color: #02160b;
+}
+.bgi_img_header {
+    margin: 0 auto;
+    background-image: url(assets/bgi_header.png);
+    background-size: cover;
+}
+.bgi_color_footer {
+    background-color: #181617;
+}
+.bgi_img_footer {
+    margin: 0 auto;
+    background-image: url(assets/bgi_footer.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+/*Блок Header*/
+header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+   width: 40%;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li:last-of-type {
+    border: 2px solid #CD6326;
+    border-radius: 5px;
+    padding: 10px 23px;
+}
+nav ul li img:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 10px 0 #E39128;
+    border-radius: 50%;
+}
+nav ul li:last-of-type:hover {
+    transition: 0.5s;
+    background-color: #CD6326;
+}
+nav ul li:last-of-type:active {
+    transition: 0.5s;
+    background-color: #8F5613;
+}
+nav ul li:last-of-type a {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 27px;  
+}
+nav ul li:last-of-type a:hover {
+    color: #f7f7f7!important;
+}
+/*Блок Survivol*/
+.survival {
+    padding: 121px 0 240px;
+}
+.survival .description {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: #f7f7f7;
+    margin-top: 51px;
+    width: 24%;
+}
+.survival button {
+    font-family: Roboto;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #f7f7f7;
+    padding: 17px 44px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CD6326;
+    cursor: pointer;
+    margin-top: 49px;
+}
+.survival button:hover {
+    transition: 0.5s;
+    background-color: #E39128;
+}
+.survival button:active {
+    transition: 0.5s;
+    background-color: #8F5613;
+}
+
+
+
+.latest_articles {
+    padding: 121px 0 240px;
+}
+.latest_articles .description {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #666666;
+    margin-top: 19px;
+}
+.latest_articles .slider {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.latest_articles .slider .container {
+    display: flex;
+    justify-content: space-between;
+}
+.latest_articles .slider .container .img_box {
+    margin: 0 30px;
+    position: relative;
+}
+.latest_articles .slider .container .description {
+    position: absolute;
+    top: 63.4%;
+    right: 18%;
+    left: 19%;
+}
+.latest_articles .slider .arrow {
+    cursor: pointer;
+    border-radius: 50%;
+}
+.latest_articles .slider .arrow:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 10px 0 #02160b;
+    
+}
+.latest_articles .slider .container .description p {
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #f7f7f7;
+    margin-top: 10px;
+}
+
+
+
+.get_notified {
+    padding-bottom: 240px;
+}
+.get_notified form {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    border: 0;
+}
+.get_notified form input {
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+}
+.get_notified form .text {
+    background-color: #cccccc;
+    border: 1px solid #666666;
+    border-right: none;
+    width: 542px;
+}
+.get_notified form .submit {
+    background-color: #CD6326;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 15px 33px;
+}
+.get_notified form .submit:hover {
+    transition: 0.5s;
+    background-color: #E39128;
+}
+.get_notified form .submit:active {
+    transition: 0.5s;
+    background-color: #8F5613;
+}
+
+
+footer {
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .contacts ul, footer .social_networks ul{
+    display: flex;
+}
+footer .contacts ul li {
+    margin: 0 44px;
+}
+footer .contacts ul li:last-of-type {
+    margin-right: 0;
+}
+footer .contacts ul li:first-of-type {
+    margin-left: 13px;
+}
+footer .social_networks ul li {
+    margin-right: 26px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+footer .social_networks ul li:last-of-type {
+    margin-right: 0;
+}
+footer .social_networks a {
+    padding: 18px 20px 0;
+}
+footer .social_networks ul li:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 15px 0 #E39128;
+}
+#facebook {
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/facebook.svg);
+}
+#instagram {
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/instagram.svg);
+}
+#pinterest {
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/pinterest.svg);
+}
+#youtube {
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/youtube.svg);
+    background-size: cover;
+}
+
+
